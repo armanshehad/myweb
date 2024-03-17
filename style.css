@@ -361,7 +361,7 @@ header nav .nav-links a:hover::before{
 }
 
 .footer{
-    background: url("/img/footer-bg.png");
+    background-color: #1c1e22;
  }
  
  .footer .flex{
