@@ -361,7 +361,7 @@ header nav .nav-links a:hover::before{
 }
 
 .footer{
-    background: url("/img/hero-bg.png");
+    background: url("/img/footer-bg.png");
  }
  
  .footer .flex{
