@@ -55,7 +55,8 @@ section{
     justify-content: space-between;
 }
 .boxs .box{
-    width: 30%;
+    width: 18%;
+    margin-bottom: 25px;
 }
 /* start Header */
 
@@ -194,7 +195,10 @@ header nav .nav-links a:hover::before{
  /* start about */ 
 
  .Education {
-    padding: 90px 0 50px;
+    padding: 100px 0 50px;
+ }
+ .Education .sec-top{
+    margin-left: 80px;
  }
 .Education .contanier{
     display: flex;
@@ -204,9 +208,10 @@ header nav .nav-links a:hover::before{
 .Education .about-img img{
     width: 300px;
     border-radius: 10px;
+    margin-top: -150px;
 }
 .Education .content{
-    margin-left: 10%;
+    margin-left: 12%;
     margin-right: 10%;
     
 }
@@ -260,37 +265,72 @@ header nav .nav-links a:hover::before{
     background-color: #f0f4f9;
     text-align: center;
 }
+.Expertise .about{
+    margin: 5%;
+    text-align: left;
+}
+
 .Expertise .boxs .box{
     background-color: #fff;
-    padding: 40px 20px;
+    padding: 20px 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 20px 0px rgba(128, 112, 22, 0.2);
     position: relative;
     top: 0;
 }
-.Expertise .boxs .box:hover{
+/* .Expertise .boxs .box:hover{
     transform: scale(1.1);
     transition: 1s;
-}
+} */
 .Expertise .boxs .box i{
     color: #ffaa17;
-    font-size: 50px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 .Expertise .boxs .box h3{
     color: #1c1e22;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 .Expertise .boxs .box p{
     color: #444;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 /* start Projects */
+.Projects .box .boxs{
+    display: flex;
+    justify-items: space-between;
+}
+.Projects .boxs{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .Projects .boxs .box{
+    width:45%;
+    height: 300px;
     margin-bottom: 50px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.Projects .boxs .box1 h4{
+    
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.Projects .boxs .box1 h5{
+    color: #ffaa17;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+.Projects .boxs .box1 li{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.Projects .boxs .box1{
+width: 45%;
 }
 .Projects .boxs .box img{
     width: 100%;
@@ -298,8 +338,7 @@ header nav .nav-links a:hover::before{
 }
 .Projects .boxs .box:hover img{
     transform: scale(1.2);
-    rotate: -4deg;
-    transition: 0.6s ease-out;
+    transition: 0.8s ease-out;
 }
 .Projects .boxs .box .box-hover{
     position: absolute;
@@ -361,7 +400,7 @@ header nav .nav-links a:hover::before{
 }
 
 .footer{
-    background-image: url("/img/hero-bg.png");
+    background-color: #1c1e22;
  }
  
  .footer .flex{
@@ -434,8 +473,8 @@ header nav .nav-links a:hover::before{
     .contanier{
         width: 90%;
     }
-    .hero .content h1{
-        font-size: 50px;
+    .hero .content h2{
+        font-size: 40px;
     }
     .hero .content p{
         font-size: 25px;
@@ -453,14 +492,21 @@ header nav .nav-links a:hover::before{
         margin-bottom: 50px;
     }
     .Education .about-img img{
-        width: 380px;
+        width: 270px;
+        margin-top: -60px;
     }
     .Expertise .boxs .box h3{
-        font-size: 22px;
+        font-size: 20px;
+    }
+    .Expertise .boxs .box p{
+        font-size: 17px;
     }
     .contact form{
         width: 70%;
     }
+    .Education .sec-top{
+        margin-left: 160px;
+     }
 
 }
 @media(max-width:900px){
@@ -473,6 +519,11 @@ header nav .nav-links a:hover::before{
     .hero .hero-img img{
         width: 340px;
     }
+    .Education .sec-top{
+        margin-left: -0px;
+        margin-top: -60px;
+        
+     }
     header nav .nav-links a{
         margin-left: 40px;
     }
@@ -481,15 +532,22 @@ header nav .nav-links a:hover::before{
         text-align: center;
     }
     .Education .about-img img{
-        width: 340px;
+        width: 200px;
+        margin-top: -30px;
     }
     .Education .about-img {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     
     .boxs .box{
-        width: 45%;
-        margin-bottom: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .Expertise .boxs .box h3{
+        font-size: 20px;
+    }
+    .Expertise .boxs .box p{
+        font-size: 17px;
     }
     .contact form{
         width: 80%;
@@ -500,7 +558,7 @@ header nav .nav-links a:hover::before{
         flex-direction: column-reverse;
     }
     .hero .hero-img img{
-        width: 380px;
+        width: 280px;
     }
     .hero .content h1{
         font-size: 50px;
@@ -508,6 +566,15 @@ header nav .nav-links a:hover::before{
     .hero .content{
         margin-top: 40px;
         text-align: center;
+    }
+    .Education .sec-top{
+        margin-left: 0px;
+     }
+     .Education .contanier{
+        width: 100%;
+    }
+    .Education .contanier p{
+        font-size: 17px;
     }
     .btn{
         padding: 12px 25px;
@@ -549,22 +616,87 @@ header nav .nav-links a:hover::before{
         font-size: 40px;
     }
     .hero .hero-img img{
-        width: 320px;
+        width: 200px;
     }
-    .boxs{
+    header nav .logo{
+        margin-left: -20px;
+    }
+    header nav .logo a{
+        font-size: 23px;
+    }
+    .Education .sec-top{
+        margin-left: 0px;
+     }
+    .boxs .box{
         justify-content: center;
 
     }
-    .boxs .box{
-        width: 70%;
+   
+    .Expertise .boxs .box h3{
+        font-size: 18px;
+    }
+    .Expertise .boxs .box p{
+        font-size: 17px;
     }
     .contact form{
         width: 90%;
     }
+    .Projects .boxs{
+   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+}
+.Projects .boxs .box{
+    margin: 5%;
+    width:100%;
+    height: 250px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 2px;
+}
+.Projects .boxs .box1{
+width: 100%;
+margin-left: 10%;
+padding-right: 15%;
+text-align: justify;
+}
+.Projects .boxs .box1 h4{
+    
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.Projects .boxs .box1 h5{
+    color: #ffaa17;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.Projects .boxs .box1 li{
+    font-size: 17px;
+    margin: 10px 0;
+}
+.sec-top h1{
+    font-size: 32px;
+    margin-top: -50px;
+    margin-bottom: -10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+}
 }
 @media(max-width:500px){
     .hero .hero-img img{
         width: 280px;
+    }
+ 
+    .hero .hero-img img{
+        width: 180px;
+    }
+    .Education .content h1{
+        color: #1c1e22;
+        font-size: 45px;
     }
     .contact form{
         width: 90%;
@@ -574,4 +706,18 @@ header nav .nav-links a:hover::before{
     .contact form input{
         width: 100%;
     }
+    .Expertise .boxs .box h3{
+        font-size: 18px;
+    }
+    .Expertise .boxs .box p{
+        font-size: 17px;
+    }
+    .boxs .box{
+        
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        
+    }
+    
 }
